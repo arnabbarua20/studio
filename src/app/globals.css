@@ -4,95 +4,95 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%; /* White */
-    --foreground: 0 0% 0%; /* Black */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
 
-    --card: 0 0% 100%; /* White */
-    --card-foreground: 0 0% 0%; /* Black */
+    --card: 0 0% 0%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 100%; /* White */
-    --popover-foreground: 0 0% 0%; /* Black */
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 0 0% 10%; /* Dark Gray / Near Black */
-    --primary-foreground: 0 0% 98%; /* White / Very Light Gray */
+    --primary: 0 0% 5%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 90%; /* Light Gray */
-    --secondary-foreground: 0 0% 10%; /* Dark Gray / Near Black */
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 90%;
 
-    --muted: 0 0% 96.1%; /* Very Light Gray */
-    --muted-foreground: 0 0% 45.1%; /* Medium Gray */
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 0 0% 20%; /* Dark Gray */
-    --accent-foreground: 0 0% 98%; /* White / Very Light Gray */
+    --accent: 0 0% 20%;
+    --accent-foreground: 0 0% 100%;
     
-    --destructive: 0 0% 40%; /* Medium-Dark Gray for destructive actions */
-    --destructive-foreground: 0 0% 98%; /* White / Very Light Gray */
+    --destructive: 0 0% 10%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 85%; /* Light Gray */
-    --input: 0 0% 95%; /* Very Light Gray for input background */
-    --ring: 0 0% 20%; /* Dark Gray for focus rings */
+    --border: 0 0% 15%;
+    --input: 0 0% 5%;
+    --ring: 0 0% 25%;
 
     --radius: 0.5rem;
 
-    --chart-1: 0 0% 20%;
-    --chart-2: 0 0% 30%;
-    --chart-3: 0 0% 40%;
-    --chart-4: 0 0% 50%;
-    --chart-5: 0 0% 60%;
+    --chart-1: 0 0% 10%;
+    --chart-2: 0 0% 15%;
+    --chart-3: 0 0% 20%;
+    --chart-4: 0 0% 25%;
+    --chart-5: 0 0% 30%;
     
-    --sidebar-background: 0 0% 98%; /* Very Light Gray */
-    --sidebar-foreground: 0 0% 10%; /* Dark Gray / Near Black */
-    --sidebar-primary: 0 0% 5%; /* Very Dark Gray / Black */
-    --sidebar-primary-foreground: 0 0% 98%; /* White / Very Light Gray */
-    --sidebar-accent: 0 0% 90%; /* Light Gray */
-    --sidebar-accent-foreground: 0 0% 5%; /* Very Dark Gray / Black */
-    --sidebar-border: 0 0% 80%; /* Light Gray */
-    --sidebar-ring: 0 0% 15%; /* Dark Gray */
+    --sidebar-background: 0 0% 0%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 5%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 0 0% 25%;
   }
 
   .dark {
-    --background: 0 0% 0%; /* Black */
-    --foreground: 0 0% 100%; /* White */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
 
-    --card: 0 0% 0%; /* Black */
-    --card-foreground: 0 0% 100%; /* White */
+    --card: 0 0% 0%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 0%; /* Black */
-    --popover-foreground: 0 0% 100%; /* White */
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 0 0% 90%; /* Light Gray / Near White */
-    --primary-foreground: 0 0% 5%; /* Black / Very Dark Gray */
+    --primary: 0 0% 5%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 20%; /* Dark Gray */
-    --secondary-foreground: 0 0% 90%; /* Light Gray / Near White */
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 90%;
 
-    --muted: 0 0% 10%; /* Very Dark Gray */
-    --muted-foreground: 0 0% 65%; /* Medium Gray */
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 0 0% 80%; /* Light Gray */
-    --accent-foreground: 0 0% 5%; /* Black / Very Dark Gray */
+    --accent: 0 0% 20%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 0% 60%; /* Medium-Light Gray for destructive actions */
-    --destructive-foreground: 0 0% 5%; /* Black / Very Dark Gray */
+    --destructive: 0 0% 10%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 15%; /* Dark Gray */
-    --input: 0 0% 10%; /* Very Dark Gray for input background */
-    --ring: 0 0% 80%; /* Light Gray for focus rings */
+    --border: 0 0% 15%;
+    --input: 0 0% 5%;
+    --ring: 0 0% 25%;
     
-    --chart-1: 0 0% 80%;
-    --chart-2: 0 0% 70%;
-    --chart-3: 0 0% 60%;
-    --chart-4: 0 0% 50%;
-    --chart-5: 0 0% 40%;
+    --chart-1: 0 0% 10%;
+    --chart-2: 0 0% 15%;
+    --chart-3: 0 0% 20%;
+    --chart-4: 0 0% 25%;
+    --chart-5: 0 0% 30%;
 
-    --sidebar-background: 0 0% 5%; /* Very Dark Gray / Black */
-    --sidebar-foreground: 0 0% 95%; /* Very Light Gray / White */
-    --sidebar-primary: 0 0% 98%; /* White / Very Light Gray */
-    --sidebar-primary-foreground: 0 0% 5%; /* Very Dark Gray / Black */
-    --sidebar-accent: 0 0% 15%; /* Dark Gray */
-    --sidebar-accent-foreground: 0 0% 98%; /* White / Very Light Gray */
-    --sidebar-border: 0 0% 20%; /* Dark Gray */
-    --sidebar-ring: 0 0% 85%; /* Light Gray */
+    --sidebar-background: 0 0% 0%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 5%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 0 0% 25%;
   }
 }
 
