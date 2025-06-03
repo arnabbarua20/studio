@@ -6,9 +6,6 @@ export function Header() {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <Leaf className="h-7 w-7 text-primary" />
-          <h1 className="text-2xl font-headline font-semibold text-foreground">
-            ImaginAIry Canvas
-          </h1>
         </div>
         <div className="flex items-center gap-2 bg-accent text-accent-foreground px-3 py-1 rounded-md text-sm font-medium shadow">
           <span>Team 4 Demo</span>

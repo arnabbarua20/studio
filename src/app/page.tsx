@@ -9,7 +9,7 @@ export default function HomePage() {
         <ImageGenerator />
       </main>
       <footer className="py-4 text-center text-xs text-muted-foreground border-t">
-        ImaginAIry Canvas &copy; {new Date().getFullYear()} - Team 4 Demo
+        Team 4 Demo &copy; {new Date().getFullYear()}
       </footer>
     </div>
   );

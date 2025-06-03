@@ -1,9 +1,9 @@
 import type {Metadata} from 'next';
 import './globals.css';
-import { Toaster } from "@/components/ui/toaster"; // Added Toaster
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'ImaginAIry Canvas',
+  title: 'Image Generation App',
   description: 'Generate images from text with AI. Team 4 Demo.',
 };
 
