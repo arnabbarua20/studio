@@ -108,7 +108,7 @@ export function ImageGenerator() {
             <Label htmlFor="prompt" className="text-base font-medium">Your Prompt</Label>
             <Textarea
               id="prompt"
-              placeholder="A majestic lion wearing a crown, photorealistic, dramatic lighting"
+              placeholder=""
               value={prompt}
               onChange={(e) => setPrompt(e.target.value)}
               rows={4}

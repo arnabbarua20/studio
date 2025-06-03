@@ -10,8 +10,10 @@ export function Header() {
             ImaginAIry Canvas
           </h1>
         </div>
-        <div className="bg-accent text-accent-foreground px-3 py-1 rounded-md text-sm font-medium shadow">
-          Team 4 Demo
+        <div className="flex items-center gap-2 bg-accent text-accent-foreground px-3 py-1 rounded-md text-sm font-medium shadow">
+          <span>Team 4 Demo</span>
+          <span className="opacity-75">|</span>
+          <span>Text to Image</span>
         </div>
       </div>
     </header>
