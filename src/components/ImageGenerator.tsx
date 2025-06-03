@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from 'react';
@@ -12,7 +13,7 @@ import { Label } from '@/components/ui/label';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { FineTuningPanel } from './FineTuningPanel';
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Loader2, Wand2, Sparkles, Settings, Image as ImageIcon } from 'lucide-react'; // Added ImageIcon for placeholder
+import { Loader2, Wand2, Sparkles, Settings, Image as ImageIcon, Download } from 'lucide-react'; 
 import { toast } from '@/hooks/use-toast';
 
 export function ImageGenerator() {
@@ -88,6 +89,29 @@ export function ImageGenerator() {
     } finally {
       setIsImprovingPrompt(false);
     }
+  };
+
+  const handleDownload = () => {
+    if (!imageUrl) {
+      toast({
+        title: "Error",
+        description: "No image to download.",
+        variant: "destructive",
+      });
+      return;
+    }
+    const link = document.createElement('a');
+    link.href = imageUrl;
+    // Suggest a filename for the download
+    const fileName = prompt.trim().toLowerCase().replace(/\s+/g, '-').substring(0, 30) || 'generated-image';
+    link.download = `${fileName}.png`; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    toast({
+      title: "Download Started",
+      description: "Your image is downloading.",
+    });
   };
 
   const imageDisplaySize = 512;
@@ -175,6 +199,14 @@ export function ImageGenerator() {
               </div>
             )}
           </div>
+          {imageUrl && !isLoading && (
+            <div className="mt-4 flex justify-center">
+              <Button onClick={handleDownload} variant="outline">
+                <Download className="mr-2 h-4 w-4" />
+                Download Image
+              </Button>
+            </div>
+          )}
         </CardContent>
         <CardFooter className="p-0 border-t">
           <Accordion type="single" collapsible className="w-full">
